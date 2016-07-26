@@ -9,6 +9,7 @@ class Criteo {
 
 	private $params = array();
 
+	// Allow Criteo methods
 	private $allow_methods = array(
 		'setAccount',
 		'setEmail',
@@ -43,8 +44,6 @@ class Criteo {
 		$param = array(
 			'event' => $event
 		);
-
-		// var_dump($array);
 
 		if (count($array) > 0) {
 			foreach ($array[0] as $key => $value) {
