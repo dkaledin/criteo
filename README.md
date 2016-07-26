@@ -1,4 +1,4 @@
-# criteo
+# Criteo OneTag
 Simple php library to generate code Criteo OneTag
 
 # Example use
