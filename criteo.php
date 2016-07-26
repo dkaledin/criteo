@@ -3,27 +3,7 @@
  *
  *
  * @author Dmitriy Kaledin
- * @package Lucy In The Sky
  */
-
-/*
-Example: 
-
-$criteo = new Criteo();
-
-$criteo->setAccount(array('account' => 31037));
-$criteo->setEmail(array('email' => ''));
-$criteo->setSiteType(array('type' => 'd'));
-$criteo->trackTransaction(array(
-	'id' => 1567893,
-	'item' => array(
-		array('id' => 45667, 'price' => 34.50, 'quantity' => 1),
-		array('id' => 46233, 'price' => 27.90, 'quantity' => 1),
-	)
-));
-
-echo $criteo->getCode();
-*/
 
 class Criteo {
 
