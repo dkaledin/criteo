@@ -13,6 +13,7 @@ class Criteo {
 	private $allow_methods = array(
 		'setAccount',
 		'setEmail',
+		'setHashedEmail',
 		'setSiteType',
 		'trackTransaction',
 		'viewHome',
