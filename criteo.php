@@ -10,7 +10,7 @@ class Criteo {
 	private $params = array();
 
 	// Allow Criteo methods
-	private $allow_methods = array(
+	private $allowMethods = array(
 		'setAccount',
 		'setEmail',
 		'setHashedEmail',
@@ -29,8 +29,8 @@ class Criteo {
 	 * @return Method
 	 */
 	public function __call($method, $args) {
-		if (in_array($method, $this->allow_methods)) {
-			return $this->add_param($method, $args);
+		if (in_array($method, $this->allowMethods)) {
+			return $this->addParam($method, $args);
 		}
 	}
 
@@ -41,7 +41,7 @@ class Criteo {
 	 * @param String  $event
 	 * @param Array   $array
 	 */
-	private function add_param($event, $array) {
+	private function addParam($event, $array) {
 		$param = array(
 			'event' => $event
 		);
